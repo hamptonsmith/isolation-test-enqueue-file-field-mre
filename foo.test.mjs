@@ -1,7 +1,6 @@
 import { test } from 'node:test';
 
 test('a test!', () => {
-    if true {
-        // syntax error
-    }
+    // Comment out this line to see the `file` field appear:
+    if true;  // Syntax error.
 });

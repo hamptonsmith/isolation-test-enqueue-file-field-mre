@@ -9,7 +9,10 @@ async function main() {
         })
         .on('data', () => {})
         .on('test:enqueue', enqueueEvent => {
-            if (!enqueueEvent?.file) {
+            if (enqueueEvent.file) {
+                console.log('File:', enqueueEvent.file)
+            }
+            else {
                 const e = new Error('No file field');
                 e.enqueueEvent = enqueueEvent;
                 rej(e);
