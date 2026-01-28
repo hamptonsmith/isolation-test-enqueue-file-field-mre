@@ -1,15 +1,12 @@
 {
-  "name": "node-test-reporter-mre",
+  "name": "isolation-test-enqueue-file-field-mre",
   "version": "0.0.1",
-  "description": "Minimal reproducable example for node-test-reporter bug",
+  "description": "MRE for node test-runner test:enqueue file field in isolation bug",
   "license": "ISC",
   "author": "Hampton Smith",
-  "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
-  "dependencies": {
-    "node-test-reporter": "^1.2.0"
+    "start": "node index.mjs",
+    "test": "node index.mjs"
   }
 }
